@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+ void main()
+{
+	float num1,num2,result;
+	char op;
+	while(1)
+	{
+
+	clrscr();
+	printf("Enter the first no");
+	scanf("%f",&num1);
+	printf("Enter the operation");
+	scanf(" %char",&op);
+	printf("Enter the second no");
+	scanf("%f",&num2);
+	switch(op)
+	{
+		case '-':
+		result =num1-num2;
+		printf("%f",result);
+		break;
+
+		case '+':
+		result =num1+num2;
+		printf("%f",result);
+		break;
+
+		case '*':
+		result =num1*num2;
+		printf("%f",result);
+		break;
+
+		case '/':
+		result =num1/num2;
+		printf("%f",result);
+		break;
+
+		case'E':
+		exit(0);
+
+		default:
+		printf("The operation is not valid");
+
+	}
+	getch();
+	}
+
+}
+
+
+
+
+
+
